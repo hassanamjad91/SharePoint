@@ -1,7 +1,7 @@
 **Hassan Amjad SPFx Showcase Project  
 Note**: To jump straight to the code snippets go to [Page 7](#project-code-highlights).
 
-## **Project: CNDS (Compliance Notice Distribution System)**
+## **Project: Survey Distribution System**
 
 ### Summary
 
