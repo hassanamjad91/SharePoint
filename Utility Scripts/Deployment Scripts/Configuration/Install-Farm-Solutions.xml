@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SolutionsFolder>C:\AAJ\DeploymentPackage\Solutions</SolutionsFolder>
+  <Solutions>
+	<Solution Scoped="TRUE" ActivationEnabled="True" Type="New">MCHSComponents.wsp</Solution>
+	<Solution Scoped="False" ActivationEnabled="True" Type="New">MCHSDefinitions.wsp</Solution>
+	<!--Solution Scoped="TRUE" ActivationEnabled="True" Type="New">MySiteMasterPage.wsp</Solution-->
+  </Solutions>
+  <WebApplicationUrl>https://intranet.mch.com</WebApplicationUrl>
+  <Features ActivationEnabled="False">
+  </Features>
+  <FeatureReceivers ActivationEnabled="False">
+  </FeatureReceivers>
+  <ContentTypeUpdates ActivationEnabled="False">
+  </ContentTypeUpdates>
+  <CustomScript ActivationEnabled="False" />
+</Config>

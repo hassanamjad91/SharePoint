@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SolutionsFolder>C:\Contoso\DeploymentPackage\Solutions</SolutionsFolder>
+  <SandboxSolutionsFolder></SandboxSolutionsFolder>
+  <Solutions></Solutions>
+  <SandboxSolutions></SandboxSolutions>
+  <TargetSiteUrl>http://intranet2017.mch.com</TargetSiteUrl>
+  <Features ActivationEnabled="True">
+	<Feature Id="" Name="Contoso_WebParts" Scope="Site" ActivationEnabled="True" Type="New" Target="Root" />
+	<Feature Id="" Name="Contoso_MasterPageAndPageLayouts" Scope="Web" ActivationEnabled="True" Type="New" Target="Root" />
+	<Feature Id="" Name="Contoso_Pages" Scope="Web" ActivationEnabled="True" Type="New" Target="Root" />
+	<Feature Id="" Name="Contoso_SiteColumns" Scope="Web" ActivationEnabled="True" Type="New" Target="Root" />	
+	<Feature Id="" Name="Contoso_Lists" Scope="Web" ActivationEnabled="True" Type="New" Target="Root"/>
+  </Features>
+  <FeatureReceivers ActivationEnabled="False">
+  </FeatureReceivers>
+  <ContentTypeUpdates ActivationEnabled="False">
+  </ContentTypeUpdates>
+  <CustomScript ActivationEnabled="False" />
+</Config>
