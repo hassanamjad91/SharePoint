@@ -1,0 +1,419 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.app {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .grid {
+    @include ms-Grid;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-black;
+    padding: 5px 0 5px 0;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg12;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .col_1 {
+    @include ms-Grid-col;
+    @include ms-sm4;
+    @include ms-md2;
+    @include ms-lg1;
+  }
+
+  .col_2 {
+    @include ms-Grid-col;
+    @include ms-sm6;
+    @include ms-md4;
+    @include ms-lg2;
+  }
+
+  .col_3 {
+    @include ms-Grid-col;
+    @include ms-sm9;
+    @include ms-md6;
+    @include ms-lg3;
+  }
+
+  .col_4 {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md8;
+    @include ms-lg4;
+  }
+
+  .col_6 {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md8;
+    @include ms-lg6;
+  }
+
+  .col_8 {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md12;
+    @include ms-lg8;
+  }
+
+  .col_10 {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md12;
+    @include ms-lg10;
+  }
+
+  .col_12 {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md12;
+    @include ms-lg12;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-black;
+    font-weight: $ms-font-weight-semibold
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-neutralPrimaryAlt;
+    font-weight: $ms-font-weight-semibold;
+    margin-top: 10px;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+    // Primary Button
+    width: auto;
+    margin-right: 10px;
+    min-width: 70px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  .people_picker {
+
+    :global {
+      .ms-BasePicker-text {
+        border-color: rgb(96, 94, 92);
+      }
+
+      .ms-BasePicker-text:hover {
+        border-color: rgb(96, 94, 92);
+      }
+    }
+  }
+
+  .people_picker.disabled {
+
+    :global {
+      input {
+        background: rgb(243,242,241);
+      }
+
+      .ms-BasePicker-text {
+        border: none;
+      }
+
+      .ms-Button {
+        display: none;
+      }
+    }
+  }
+
+  .ckeditor4 {
+
+    :global {
+      .cke .cke_top {
+        display: block;
+      }
+
+      .cke.cke_chrome {
+        border-color: rgb(96, 94, 92);
+      }
+    }
+  }
+
+  .ckeditor4.disabled {
+
+    :global {
+      .cke.cke_chrome {
+        border-color: #d1d1d1;
+      }
+
+      span.cke_button__source_icon,
+      span.cke_button__source_label {
+        opacity: .3;
+      }
+    }
+  }
+
+  .file {
+    margin: 10px 0 0 0;
+    white-space: nowrap;
+    line-height: 32px;
+  }
+
+  .file_uploaded {
+    color: #a4262c;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f0d3d4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    min-width: 0;
+    position: relative;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 32px;
+    user-select: none;
+    outline: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0px;
+  }
+
+  .file_uploaded:hover {
+    background-color: #E6EAED;
+  }
+
+  .file_uploaded_remove {
+    color: #a4262c;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f0d3d4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    min-width: 0;
+    position: relative;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 32px;
+    user-select: none;
+    outline: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0px;
+  }
+
+  .file_uploaded_remove:hover {
+    background-color: #e3afb2;
+  }
+
+  .file_native {
+    color: #333333;
+    text-decoration: none;
+    cursor: default;
+    background-color: #F4F4F4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    min-width: 0;
+    position: relative;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 32px;
+    user-select: none;
+    outline: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0px;
+  }
+
+  .file_native_remove {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #F4F4F4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    min-width: 0;
+    position: relative;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 32px;
+    user-select: none;
+    outline: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0px;
+  }
+
+  .file_native_remove:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  button:disabled:hover,
+  button:disabled:hover,
+  button[disabled]:hover,
+  .button:disabled,
+  .button:disabled:hover,
+  .button[disabled]:hover {
+    background-color: #cccccc;
+    border: none;
+    cursor: not-allowed;
+    color: #5a5a5a;
+  }
+
+  .disabled {
+    background: #F4F4F4 !important;
+    border: none;
+  }
+
+  .invalid {
+    border: 1px solid #ff4a5a;
+
+    :global {
+      div[class*="fieldGroup"] {
+        border: none;
+      }
+
+      div[class*="ms-Dropdown"] {
+        border: none;
+      }
+
+      div.ms-BasePicker-text {
+        border: none;
+      }
+
+      .cke.cke_chrome {
+        border: none;
+      }
+    }
+  }
+
+  .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px 0px 10px 8px;
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+  }
+
+  .warning {
+    color: #856404;
+    background-color: #fff3cd;
+    padding: 10px 0px 10px 8px;
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+  }
+
+  .success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px 0px 10px 8px;
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+  }
+}

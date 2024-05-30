@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Compliance Notice Distribution System",
+    "id": "3e96a4ca-470b-4cc3-a467-f6f0a9eec51b",
+    "version": "1.1.4.2",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/cnds-app.sppkg"
+  }
+}

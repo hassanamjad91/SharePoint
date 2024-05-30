@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "questionnaire-admin": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/questionnaire_admin/webpart.js",
+          "manifest": "./src/webparts/questionnaire_admin/manifest.json"
+        }
+      ]
+    },
+    "questionnaire-designer": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/questionnaire_designer/webpart.js",
+          "manifest": "./src/webparts/questionnaire_designer/manifest.json"
+        }
+      ]
+    },
+    "questionnaire-form": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/questionnaire_form/webpart.js",
+          "manifest": "./src/webparts/questionnaire_form/manifest.json"
+        }
+      ]
+    },
+    "questionnaire-notification": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/questionnaire_notification/webpart.js",
+          "manifest": "./src/webparts/questionnaire_notification/manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "questionnaire-manage-locale": "lib/webparts/questionnaire_admin/locale/{locale}.js",
+    "questionnaire-wizard-locale": "lib/webparts/questionnaire_designer/locale/{locale}.js",
+    "questionnaire-form-locale": "lib/webparts/questionnaire_form/locale/{locale}.js",
+    "questionnaire-notifier-locale": "lib/webparts/questionnaire_notification/locale/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.9.1",
+    "libraryName": "cnds-app",
+    "libraryId": "3e96a4ca-470b-4cc3-a467-f6f0a9eec51b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "cnds_app",
+    "skipFeatureDeployment": "false",
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "CNDS",
+    "componentDescription": "CNDS App",
+    "isCreatingSolution": true,
+    "isDomainIsolated": "false"
+  }
+}
